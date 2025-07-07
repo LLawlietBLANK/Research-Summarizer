@@ -25,7 +25,7 @@ An intelligent document analysis system with:
   - **Challenge Mode**: Generated questions with evaluation
 
 ## System Architecture
-smart-research-assistant/
+smart-research-assistant/ 
 ├── backend/
 │ ├── main.py # FastAPI application
 │ ├── summarizer.py # Document processing & summarization
