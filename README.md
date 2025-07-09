@@ -39,23 +39,36 @@ research-summarizer/
 
 research-summarizer/
 -backend/
+
   -main.py
+
   -services/
+
     -summarization_serivce.py
+
     -document_processor.py
+
     -qa_service.py
+
     -challenge-service.py
+
     -vector_store.py
+
 -frontend/
+
   -app.py
+
 -README.md
+
 -requirements.txt
+
 
 ## SETUP
 
 ### Create a virtual environment
 python -m venv venv
 source venv/bin/activate  # Linux/MacOS
+
 venv\Scripts\activate     # Windows
 
 ### Install dependencies
