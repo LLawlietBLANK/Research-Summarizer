@@ -1,8 +1,8 @@
 # Smart Research Assistant
 ## Overview
-
+This Smart Research Assistant is an AI-powered tool designed to help users quickly understand and interact with documents through summarization, question answering, and comprehension challenges. 
 An intelligent document analysis system with:
-- **Backend API**: FastAPI service for document processing, summarization, and question answering
+- **Backend API**: FastAPI service for document processing, summarization, question answering and challenging mode
 - **Frontend Interface**: Streamlit web app for user interaction
 
 ## Features
@@ -21,20 +21,35 @@ An intelligent document analysis system with:
   - Clear document function
 
 - **Interaction Modes**
-  - **Question Answering**: Natural language questions about documents
-  - **Challenge Mode**: Generated questions with evaluation
+  - **Question Answering**: Allows the user to ask questions related to the document and answers those questions based on the document, also providing the reference of the answer from the text.
+  - **Challenge Mode**: Generated questions and challenges the user to answer those questions
 
 ## System Architecture
-smart-research-assistant/ 
+research-summarizer/ 
 ├── backend/
 │ ├── main.py # FastAPI application
-│ ├── summarizer.py # Document processing & summarization
+│ ├──services/
+├── summarizer.py # Document processing & summarization
 │ ├── qa_service.py # Question answering system
 │ ├── challenge_service.py # Challenge generation
 ├── frontend/
 │ └── app.py # Streamlit application
 ├── requirements.txt
 └── README.md # This document
+
+research-summarizer/
+-backend/
+  -main.py
+  -services/
+    -summarization_serivce.py
+    -document_processor.py
+    -qa_service.py
+    -challenge-service.py
+    -vector_store.py
+-frontend/
+  -app.py
+-README.md
+-requirements.txt
 
 ## SETUP
 
