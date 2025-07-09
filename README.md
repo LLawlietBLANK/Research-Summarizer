@@ -25,19 +25,8 @@ An intelligent document analysis system with:
   - **Challenge Mode**: Generated questions and challenges the user to answer those questions
 
 ## System Architecture
-research-summarizer/ 
-├── backend/
-│ ├── main.py # FastAPI application
-│ ├──services/
-├── summarizer.py # Document processing & summarization
-│ ├── qa_service.py # Question answering system
-│ ├── challenge_service.py # Challenge generation
-├── frontend/
-│ └── app.py # Streamlit application
-├── requirements.txt
-└── README.md # This document
-
 research-summarizer/
+
 -backend/
 
   -main.py
