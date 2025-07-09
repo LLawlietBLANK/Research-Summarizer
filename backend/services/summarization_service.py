@@ -23,7 +23,7 @@ class SummarizationService:
         # Clean and validate input
         clean_text = self._preprocess_text(text)
         if not clean_text.strip():
-            return "No meaningful content to summarize"
+            return "No meaningful content to summarize"  
 
         # Split document while preserving structure
         chunks = self.text_splitter.split_text(clean_text)
