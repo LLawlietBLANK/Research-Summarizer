@@ -14,11 +14,12 @@ class ChallengeService:
         selected_chunks = random.sample(chunks, min(num_questions, len(chunks)))
         questions = []
         
+
         for chunk in selected_chunks:
             # Generate question from chunk text
             result = self.generator(
                 f"generate question: {chunk['text']}",
-                max_length=64,
+                max_length=128,
                 num_return_sequences=1
             )
             
@@ -29,4 +30,4 @@ class ChallengeService:
                 "chunk_id": chunk['chunk_id']
             })
         
-        return questions
+        return questions        
